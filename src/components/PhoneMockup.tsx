@@ -1,3 +1,5 @@
+import mainScreen from "@/assets/pt_1.jpg";
+
 const PhoneMockup = () => {
   return (
     <div className="relative flex items-center justify-center h-[500px] md:h-[600px]">
@@ -22,15 +24,12 @@ const PhoneMockup = () => {
       <div className="relative z-20 animate-float-enhanced">
         <div className="relative w-[220px] md:w-[280px] h-[440px] md:h-[560px] bg-foreground rounded-[2rem] border-[4px] border-foreground shadow-2xl overflow-hidden">
           {/* Android Screen */}
-          <div className="absolute inset-[4px] rounded-[1.5rem] bg-gradient-to-b from-muted to-muted/50 flex items-center justify-center overflow-hidden">
-            <div className="text-center p-6">
-              <p className="text-sm font-semibold text-foreground mb-1">AI-Powered</p>
-              <p className="text-base font-bold text-foreground mb-4">Prompt Creation<br/>at Your Fingertips</p>
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-foreground/10 flex items-center justify-center">
-                <span className="text-3xl">✨</span>
-              </div>
-              <p className="text-xs text-muted-foreground mt-4">Main Screen</p>
-            </div>
+          <div className="absolute inset-[4px] rounded-[1.5rem] overflow-hidden">
+            <img 
+              src={mainScreen} 
+              alt="PromptKit App Screen" 
+              className="w-full h-full object-cover"
+            />
           </div>
           {/* Android Camera Punch Hole */}
           <div className="absolute top-4 left-1/2 -translate-x-1/2 w-4 h-4 bg-foreground rounded-full" />
