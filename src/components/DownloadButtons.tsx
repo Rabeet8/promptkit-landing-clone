@@ -1,17 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Apple } from "lucide-react";
 
 const DownloadButtons = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-4">
-      {/* Apple Store Button */}
-      <Button 
-        className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 py-6 h-auto"
-      >
-        <Apple className="w-5 h-5 mr-2" />
-        <span className="font-semibold">Apple Store</span>
-      </Button>
-
+    <div className="flex items-center justify-center">
       {/* Google Play Button */}
       <Button 
         className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 py-6 h-auto"
