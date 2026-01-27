@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import iconLogo from "@/assets/icon.png";
 
 const Header = () => {
   return (
@@ -7,9 +8,7 @@ const Header = () => {
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-            <div className="w-3 h-3 rounded-full bg-primary-foreground" />
-          </div>
+          <img src={iconLogo} alt="PromptKit" className="w-8 h-8" />
           <span className="text-xl font-bold text-foreground">PromptKit</span>
         </div>
 
