@@ -35,31 +35,30 @@ const HeroSection = () => {
             const Icon = item.icon;
             // Outermost circle: scale(1.2) on 800px container = 400 * 1.2 = 480px radius
             const radius = 480;
-            const duration = 24; // seconds for full orbit
+            const duration = 24;
             
             return (
               <div
                 key={index}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                className="absolute inset-0 animate-orbit"
                 style={{
-                  width: radius * 2,
-                  height: radius * 2,
+                  animationDuration: `${duration}s`,
+                  animationDelay: `-${item.delay}s`,
                 }}
               >
+                {/* Icon positioned at the right edge of the circle */}
                 <div
-                  className="absolute left-1/2 top-1/2 animate-orbit"
+                  className="absolute"
                   style={{
-                    '--orbit-radius': `${radius}px`,
-                    '--orbit-duration': `${duration}s`,
-                    animationDelay: `-${item.delay}s`,
-                  } as React.CSSProperties}
+                    left: '50%',
+                    top: '50%',
+                    transform: `translateX(${radius}px) translateY(-50%)`,
+                  }}
                 >
-                  <div className="animate-float-icon" style={{ animationDelay: `${index * 0.3}s` }}>
-                    <Icon 
-                      className="text-muted-foreground/40" 
-                      size={22} 
-                    />
-                  </div>
+                  <Icon 
+                    className="text-muted-foreground/40" 
+                    size={22} 
+                  />
                 </div>
               </div>
             );

@@ -90,8 +90,8 @@ export default {
           "75%": { transform: "translateY(-20px) rotate(-1deg)" },
         },
         "orbit": {
-          "0%": { transform: "rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg)" },
-          "100%": { transform: "rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg)" },
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
         "pulse-ring": {
           "0%, 100%": { opacity: "0.3", transform: "scale(1)" },
