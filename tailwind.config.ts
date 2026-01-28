@@ -89,6 +89,18 @@ export default {
           "50%": { transform: "translateY(-25px) rotate(0deg)" },
           "75%": { transform: "translateY(-20px) rotate(-1deg)" },
         },
+        "orbit": {
+          "0%": { transform: "rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg)" },
+          "100%": { transform: "rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg)" },
+        },
+        "pulse-ring": {
+          "0%, 100%": { opacity: "0.3", transform: "scale(1)" },
+          "50%": { opacity: "0.6", transform: "scale(1.02)" },
+        },
+        "float-icon": {
+          "0%, 100%": { transform: "translateY(0) scale(1)" },
+          "50%": { transform: "translateY(-8px) scale(1.1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -96,6 +108,9 @@ export default {
         "ripple": "ripple 3s ease-out infinite",
         "float": "float 6s ease-in-out infinite",
         "float-enhanced": "float-enhanced 4s ease-in-out infinite",
+        "orbit": "orbit var(--orbit-duration, 20s) linear infinite",
+        "pulse-ring": "pulse-ring 3s ease-in-out infinite",
+        "float-icon": "float-icon 3s ease-in-out infinite",
       },
     },
   },
