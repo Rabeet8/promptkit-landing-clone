@@ -20,14 +20,13 @@ const HeroSection = () => {
       {/* Background Ripples with Animation */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="relative w-[800px] h-[800px]">
-          {/* Animated Circles */}
+          {/* Static Circles */}
           {[1, 2, 3, 4, 5].map((i) => (
             <div
               key={i}
-              className="absolute inset-0 rounded-full border border-muted-foreground/10 animate-pulse-ring"
+              className="absolute inset-0 rounded-full border border-muted-foreground/10"
               style={{
                 transform: `scale(${0.3 + i * 0.18})`,
-                animationDelay: `${i * 0.5}s`,
               }}
             />
           ))}
