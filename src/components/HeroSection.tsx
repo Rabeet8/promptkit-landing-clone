@@ -1,16 +1,16 @@
 import PhoneMockup from "./PhoneMockup";
 import DownloadButtons from "./DownloadButtons";
-import { Brain, Sparkles, Wand2, Zap, Lightbulb, Bot, MessageSquare, Stars } from "lucide-react";
+import { Cpu, Fingerprint, Layers, Atom, Hexagon, Rocket, CircuitBoard, Gem } from "lucide-react";
 
 const orbitingIcons = [
-  { icon: Brain, delay: 0 },
-  { icon: Sparkles, delay: 3 },
-  { icon: Wand2, delay: 6 },
-  { icon: Zap, delay: 9 },
-  { icon: Lightbulb, delay: 12 },
-  { icon: Bot, delay: 15 },
-  { icon: MessageSquare, delay: 18 },
-  { icon: Stars, delay: 21 },
+  { icon: Cpu, delay: 0 },
+  { icon: Fingerprint, delay: 3 },
+  { icon: Layers, delay: 6 },
+  { icon: Atom, delay: 9 },
+  { icon: Hexagon, delay: 12 },
+  { icon: Rocket, delay: 15 },
+  { icon: CircuitBoard, delay: 18 },
+  { icon: Gem, delay: 21 },
 ];
 
 const HeroSection = () => {
