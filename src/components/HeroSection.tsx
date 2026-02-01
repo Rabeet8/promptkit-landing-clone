@@ -1,5 +1,5 @@
 import PhoneMockup from "./PhoneMockup";
-import DownloadButtons from "./DownloadButtons";
+
 import { Cpu, Fingerprint, Layers, Atom, Hexagon, Rocket, CircuitBoard, Gem } from "lucide-react";
 
 const orbitingIcons = [
@@ -36,7 +36,7 @@ const HeroSection = () => {
             // Outermost circle: scale(1.2) on 800px container = 400 * 1.2 = 480px radius
             const radius = 480;
             const duration = 24;
-            
+
             return (
               <div
                 key={index}
@@ -55,9 +55,9 @@ const HeroSection = () => {
                     transform: `translateX(${radius}px) translateY(-50%)`,
                   }}
                 >
-                  <Icon 
-                    className="text-muted-foreground/40" 
-                    size={22} 
+                  <Icon
+                    className="text-muted-foreground/40"
+                    size={22}
                   />
                 </div>
               </div>
@@ -73,19 +73,18 @@ const HeroSection = () => {
             Meet <span className="text-primary">PromptKit!</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-md mx-auto">
-            Your All-in-One solution for stunning AI prompts.
+            Utility app for AI researchers and developers.
           </p>
         </div>
 
         {/* Phone Mockups */}
         <PhoneMockup />
 
-        {/* Download Section */}
+        {/* Coming Soon Section */}
         <div className="text-center mt-12">
-          <p className="text-lg font-medium text-muted-foreground mb-6">
-            Download for FREE!
+          <p className="text-lg font-medium text-muted-foreground">
+            Coming soon on app stores
           </p>
-          <DownloadButtons />
         </div>
       </div>
     </section>

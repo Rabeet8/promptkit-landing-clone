@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -13,24 +12,23 @@ const Header = () => {
 
         {/* Center Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link 
-            to="/privacy-policy" 
+          <Link
+            to="/privacy-policy"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Privacy Policy
           </Link>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             About
           </Link>
         </nav>
 
-        {/* Download Button */}
+        {/* Coming Soon Button */}
         <Button className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-5">
-          <Download className="w-4 h-4 mr-2" />
-          Download
+          Coming soon
         </Button>
       </div>
     </header>
